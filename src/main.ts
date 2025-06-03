@@ -8,7 +8,7 @@ async function bootstrap() {
 
   // Habilitar CORS
   app.enableCors({
-    origin: 'http://localhost:3000', // Permitir solicitudes desde el frontend
+    origin: ['http://localhost:3000', 'https://frontend-aromalife.onrender.com'], // Permitir solicitudes desde el frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Métodos permitidos
     credentials: true, // Permitir cookies si es necesario
   });
