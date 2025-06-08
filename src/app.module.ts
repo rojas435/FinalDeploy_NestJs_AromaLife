@@ -85,7 +85,7 @@ import { EmotionalStateFragrance } from './fragrance/emotional-state_fragrance/e
           ],
           
           // --- CAMBIO MÁS IMPORTANTE PARA PRODUCCIÓN ---
-          synchronize: true, // ¡NUNCA true en producción después del setup inicial!
+          synchronize: false, // ¡NUNCA true en producción después del setup inicial!
                               // Alternativa: synchronize: !isProduction, (sería true para dev, false para prod)
 
           ssl: isProduction && dbUrl && dbUrl.includes('render.com') 
